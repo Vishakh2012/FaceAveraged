@@ -7,8 +7,8 @@ import dlib
 def main(args):
     image_pattern = '*.jpg'
 
-    predictor_path = args.predictor_path
-    faces_folder_path = Path(args.folder)
+    predictor_path = "add_the_path_to_the_preditor"#add the path to the shape_predictor_68_face_landmarks as a string literal
+    faces_folder_path = Path("add_the_string_here")#add the path to the file having the faces
     display = args.display
 
     detector = dlib.get_frontal_face_detector()
