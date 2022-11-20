@@ -1,10 +1,10 @@
 # average-face
 Algorithm for calculating average face from multiple images
 
-To detect faces, face landmarks and save them to file run
-` python face_landmark_detector.py -p <path to Dlib shape predictor model> -f <path to folder with images>`
+To detect faces, face landmarks and save them to file run from https://github.com/tzutalin/dlib-android/blob/master/data/shape_predictor_68_face_landmarks.dat`
 
 To run face averaging
-`python face_average.py -p <path to folder with images>`
+- first run the face_landmark_detector.py after adding the path to the face predictor landmark and to the images folder
+- then add the photos into the images folder, and delete the k.txt file from the images folder
 
-The code is based on this [post](https://javewa.github.io/2018/08/23/face/) and this [post](https://www.learnopencv.com/average-face-opencv-c-python-tutorial/)
+- then run the face_average.py
